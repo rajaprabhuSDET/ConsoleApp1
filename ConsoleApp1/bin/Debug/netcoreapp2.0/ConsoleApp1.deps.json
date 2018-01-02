@@ -1,13 +1,16 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "8487c95e2bbb757e1df8850d39d38d7c4fdd79d7"
+    "signature": "db843884139c273a367998c22411e2f151e9ac95"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.0": {
       "ConsoleApp1/1.0.0": {
         "dependencies": {
+          "Bytescout.Spreadsheet": "2.70.1553",
+          "ExcelLibrary": "1.2011.7.31",
+          "Microsoft.Office.Interop.Excel": "15.0.4795.1000",
           "NUnit": "3.9.0",
           "Selenium.Chrome.WebDriver": "2.33.0",
           "Selenium.Firefox.WebDriver": "0.19.1",
@@ -16,6 +19,16 @@
         },
         "runtime": {
           "ConsoleApp1.dll": {}
+        }
+      },
+      "Bytescout.Spreadsheet/2.70.1553": {
+        "runtime": {
+          "lib/net40/Bytescout.Spreadsheet.dll": {}
+        }
+      },
+      "ExcelLibrary/1.2011.7.31": {
+        "runtime": {
+          "lib/ExcelLibrary.dll": {}
         }
       },
       "Microsoft.CSharp/4.3.0": {
@@ -39,6 +52,11 @@
         }
       },
       "Microsoft.NETCore.Targets/1.1.0": {},
+      "Microsoft.Office.Interop.Excel/15.0.4795.1000": {
+        "runtime": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
+        }
+      },
       "Newtonsoft.Json/10.0.3": {
         "dependencies": {
           "Microsoft.CSharp": "4.3.0",
@@ -438,6 +456,20 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Bytescout.Spreadsheet/2.70.1553": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fR9giJNNl7yLBqZSjOXh1LBctCHDFQe+/nVNbJRgsKus+w8oGuWf5uE6+Zyqq2f3iDps64FAuHqgN/e9VvX4FA==",
+      "path": "bytescout.spreadsheet/2.70.1553",
+      "hashPath": "bytescout.spreadsheet.2.70.1553.nupkg.sha512"
+    },
+    "ExcelLibrary/1.2011.7.31": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ogX1mzqe1Ek3Z0AdER4B4QBJoBkt90Mfe0LnyiPg/uP+iZ7rx+9fFXbsZjOlPsS0xNn8sFeesvNnfEnuthudrQ==",
+      "path": "excellibrary/1.2011.7.31",
+      "hashPath": "excellibrary.1.2011.7.31.nupkg.sha512"
+    },
     "Microsoft.CSharp/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -451,6 +483,13 @@
       "sha512": "sha512-aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.Office.Interop.Excel/15.0.4795.1000": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DfceS96ustwfL8EOJNNRtpk6b0RylhjNpgeeemuvi9X4GYks2UTeAimjSrdFEfuqRo5ibZ4Sd0gJIeDr9gMa6Q==",
+      "path": "microsoft.office.interop.excel/15.0.4795.1000",
+      "hashPath": "microsoft.office.interop.excel.15.0.4795.1000.nupkg.sha512"
     },
     "Newtonsoft.Json/10.0.3": {
       "type": "package",

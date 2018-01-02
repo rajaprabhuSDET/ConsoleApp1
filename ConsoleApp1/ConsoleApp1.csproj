@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Bytescout.Spreadsheet" Version="2.70.1553" />
+    <PackageReference Include="DBConnector" Version="1.0.0" />
+    <PackageReference Include="ExcelLibrary" Version="1.2011.7.31" />
+    <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1000" />
     <PackageReference Include="NUnit" Version="3.9.0" />
     <PackageReference Include="Selenium.Chrome.WebDriver" Version="2.33.0" />
     <PackageReference Include="Selenium.Firefox.WebDriver" Version="0.19.1" />

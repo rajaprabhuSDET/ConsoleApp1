@@ -2,6 +2,33 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "Bytescout.Spreadsheet/2.70.1553": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Bytescout.Spreadsheet.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Bytescout.Spreadsheet.dll": {}
+        }
+      },
+      "DBConnector/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/RototypeIntl.Database.dll": {}
+        },
+        "runtime": {
+          "lib/RototypeIntl.Database.dll": {}
+        }
+      },
+      "ExcelLibrary/1.2011.7.31": {
+        "type": "package",
+        "compile": {
+          "lib/ExcelLibrary.dll": {}
+        },
+        "runtime": {
+          "lib/ExcelLibrary.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -216,6 +243,15 @@
         },
         "runtime": {
           "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.Office.Interop.Excel/15.0.4795.1000": {
+        "type": "package",
+        "compile": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
+        },
+        "runtime": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
         }
       },
       "NETStandard.Library/2.0.0": {
@@ -901,6 +937,39 @@
     }
   },
   "libraries": {
+    "Bytescout.Spreadsheet/2.70.1553": {
+      "sha512": "fR9giJNNl7yLBqZSjOXh1LBctCHDFQe+/nVNbJRgsKus+w8oGuWf5uE6+Zyqq2f3iDps64FAuHqgN/e9VvX4FA==",
+      "type": "package",
+      "path": "bytescout.spreadsheet/2.70.1553",
+      "files": [
+        "bytescout.spreadsheet.2.70.1553.nupkg.sha512",
+        "bytescout.spreadsheet.nuspec",
+        "lib/net20/Bytescout.Spreadsheet.XML",
+        "lib/net20/Bytescout.Spreadsheet.dll",
+        "lib/net40/Bytescout.Spreadsheet.XML",
+        "lib/net40/Bytescout.Spreadsheet.dll"
+      ]
+    },
+    "DBConnector/1.0.0": {
+      "sha512": "gDmKP2Zwe1vu9gmlUwCaSAMgiQiDCGHSNCVJOFBh8BvJLqlVSgmuJuIFaSn4dnO4IzcTen8hP2pt/CytBneabg==",
+      "type": "package",
+      "path": "dbconnector/1.0.0",
+      "files": [
+        "dbconnector.1.0.0.nupkg.sha512",
+        "dbconnector.nuspec",
+        "lib/RototypeIntl.Database.dll"
+      ]
+    },
+    "ExcelLibrary/1.2011.7.31": {
+      "sha512": "ogX1mzqe1Ek3Z0AdER4B4QBJoBkt90Mfe0LnyiPg/uP+iZ7rx+9fFXbsZjOlPsS0xNn8sFeesvNnfEnuthudrQ==",
+      "type": "package",
+      "path": "excellibrary/1.2011.7.31",
+      "files": [
+        "excellibrary.1.2011.7.31.nupkg.sha512",
+        "excellibrary.nuspec",
+        "lib/ExcelLibrary.dll"
+      ]
+    },
     "Microsoft.CSharp/4.3.0": {
       "sha512": "P+MBhIM0YX+JqROuf7i306ZLJEjQYA9uUyRDE+OqwUI5sh41e2ZbPQV3LfAPh+29cmceE1pUffXsGfR4eMY3KA==",
       "type": "package",
@@ -1298,6 +1367,16 @@
         "microsoft.netcore.targets.1.1.0.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
         "runtime.json"
+      ]
+    },
+    "Microsoft.Office.Interop.Excel/15.0.4795.1000": {
+      "sha512": "DfceS96ustwfL8EOJNNRtpk6b0RylhjNpgeeemuvi9X4GYks2UTeAimjSrdFEfuqRo5ibZ4Sd0gJIeDr9gMa6Q==",
+      "type": "package",
+      "path": "microsoft.office.interop.excel/15.0.4795.1000",
+      "files": [
+        "lib/net20/Microsoft.Office.Interop.Excel.dll",
+        "microsoft.office.interop.excel.15.0.4795.1000.nupkg.sha512",
+        "microsoft.office.interop.excel.nuspec"
       ]
     },
     "NETStandard.Library/2.0.0": {
@@ -3791,7 +3870,11 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Bytescout.Spreadsheet >= 2.70.1553",
+      "DBConnector >= 1.0.0",
+      "ExcelLibrary >= 1.2011.7.31",
       "Microsoft.NETCore.App >= 2.0.0",
+      "Microsoft.Office.Interop.Excel >= 15.0.4795.1000",
       "NUnit >= 3.9.0",
       "Selenium.Chrome.WebDriver >= 2.33.0",
       "Selenium.Firefox.WebDriver >= 0.19.1",
@@ -3846,10 +3929,26 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Bytescout.Spreadsheet": {
+            "target": "Package",
+            "version": "[2.70.1553, )"
+          },
+          "DBConnector": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "ExcelLibrary": {
+            "target": "Package",
+            "version": "[1.2011.7.31, )"
+          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "[2.0.0, )",
             "autoReferenced": true
+          },
+          "Microsoft.Office.Interop.Excel": {
+            "target": "Package",
+            "version": "[15.0.4795.1000, )"
           },
           "NUnit": {
             "target": "Package",
@@ -3879,5 +3978,47 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Bytescout.Spreadsheet 2.70.1553' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Bytescout.Spreadsheet",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'DBConnector 1.0.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "DBConnector",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'ExcelLibrary 1.2011.7.31' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "ExcelLibrary",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Office.Interop.Excel 15.0.4795.1000' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Office.Interop.Excel",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    }
+  ]
 }
