@@ -1,8 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ConsoleApp1"
+    "\\ConsoleApp1",
+    "\\ConsoleApp1\\bin",
+    "\\ConsoleApp1\\bin\\Debug",
+    "\\ConsoleApp1\\bin\\Debug\\netcoreapp2.0",
+    "\\ConsoleApp1\\bin\\Release",
+    "\\ConsoleApp1\\bin\\Release\\netcoreapp2.0"
   ],
-  "SelectedNode": "\\ConsoleApp1.sln",
+  "SelectedNode": "\\ConsoleApp1\\bin",
   "PreviewInSolutionExplorer": false
 }
